@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#052d26">
+  <meta name="description" content="Муракаева Марина — автор приложения для любителей чтения. Свяжитесь со мной в Telegram.">
+  <title>Муракаева Марина · Персональная визитка</title>
+  <style>
+    :root { color-scheme: dark; --mint: #a6f8d4; --ink: #e7fff3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; background: #041c19; color: var(--ink); font-family: Georgia, 'Times New Roman', serif; display: grid; place-items: center; padding: 32px 20px; overflow-x: hidden; }
+    body::before { content: ''; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 20% 10%, #12624b66, transparent 55%), radial-gradient(ellipse at 90% 85%, #087c5433, transparent 50%); }
+    .card { position: relative; width: min(100%, 1000px); padding: clamp(28px, 6vw, 76px); border: 1px solid #a6f8d430; border-radius: 28px; background: linear-gradient(135deg, #0c3a31e8, #05261fe8); box-shadow: 0 32px 100px #0005; overflow: hidden; }
+    .card::after { content: ''; position: absolute; width: 360px; height: 360px; right: -210px; top: 80px; border: 1px solid #a6f8d422; border-radius: 50%; box-shadow: 0 0 0 40px #a6f8d409, 0 0 0 80px #a6f8d406; pointer-events: none; }
+    header, footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .label { font: 11px/1.6 Arial, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: #b5d9c9; }
+    .mark { width: 44px; height: 44px; padding: 10px; border: 1px solid #a6f8d440; border-radius: 50%; color: var(--mint); }
+    main { position: relative; z-index: 1; padding: clamp(54px, 9vw, 100px) 0 64px; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; font: 13px Arial, sans-serif; color: var(--mint); }
+    .dot { width: 6px; height: 6px; background: #82edbc; border-radius: 50%; box-shadow: 0 0 14px #82edbc; }
+    h1 { margin: 25px 0; font-size: clamp(40px, 7.8vw, 88px); line-height: 1.08; font-weight: 400; letter-spacing: -.045em; }
+    h1 span { display: block; width: fit-content; max-width: 100%; background: linear-gradient(105deg, #f0fff6 10%, #a6f8d4 45%, #46bd91 70%, #e1ffed); background-size: 200% auto; background-clip: text; -webkit-background-clip: text; color: transparent; filter: drop-shadow(0 0 18px #67e6b333); animation: glow 8s ease-in-out infinite alternate; }
+    .description { max-width: 430px; margin: 0; color: #b6cec2; font: 17px/1.7 Arial, sans-serif; }
+    .actions { margin-top: 36px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    a { -webkit-tap-highlight-color: transparent; }
+    .button { display: inline-flex; align-items: center; gap: 24px; min-height: 56px; padding: 16px 24px; border-radius: 100px; background: var(--mint); color: #073c2b; text-decoration: none; font: 600 14px Arial, sans-serif; position: relative; overflow: hidden; transition: transform .25s, box-shadow .25s; }
+    .button::before { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 25%, #fff8 50%, transparent 75%); transform: translateX(-150%); animation: shimmer 6s ease-in-out infinite; }
+    .button:hover { transform: translateY(-3px); box-shadow: 0 10px 32px #6de5b42b; }
+    .button svg { width: 20px; height: 20px; transition: transform .25s; }
+    .button:hover svg { transform: translate(3px, -3px); }
+    .social { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border: 1px solid #a6f8d44a; border-radius: 50%; color: var(--mint); transition: background .25s, transform .25s, box-shadow .25s; }
+    .social svg { width: 24px; height: 24px; }
+    .social:hover { background: #a6f8d419; transform: rotate(-8deg) translateY(-3px); box-shadow: 0 0 24px #6de5b420; }
+    a:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
+    footer { position: relative; z-index: 1; border-top: 1px solid #a6f8d424; padding-top: 24px; color: #a8c8b9; font: 12px/1.6 Arial, sans-serif; }
+    footer a { color: inherit; text-decoration: none; overflow-wrap: anywhere; }
+    footer a:hover { color: var(--mint); text-decoration: underline; }
+    .book-note { display: flex; align-items: center; gap: 9px; }
+    .book-note svg { width: 18px; height: 18px; flex-shrink: 0; }
+    @keyframes glow { to { background-position: 100% center; filter: drop-shadow(0 0 24px #67e6b355); } }
+    @keyframes shimmer { 0%, 65% { transform: translateX(-150%); } 90%, 100% { transform: translateX(150%); } }
+    @media (max-width: 520px) { body { padding: 16px 12px; } .card { border-radius: 22px; } header .label { font-size: 9px; letter-spacing: .16em; } main { padding-bottom: 48px; } footer { align-items: flex-start; flex-direction: column; gap: 12px; } .description { font-size: 15px; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <article class="card" aria-label="Персональная визитка">
+    <header>
+      <span class="label">Личная история · Новая глава</span>
+      <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 5c4-1 6 0 9 2 3-2 5-3 9-2v14c-4-1-6 0-9 2-3-2-5-3-9-2V5Z"/><path d="M12 7v14"/></svg>
+    </header>
+    <main>
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Рада знакомству</div>
+      <h1><span>Муракаева</span><span>Марина</span></h1>
+      <p class="description">Автор приложения<br>для любителей чтения</p>
+      <div class="actions">
+        <a class="button" href="https://t.me/marina_bor_mur" target="_blank" rel="noopener noreferrer">Написать мне<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        <a class="social" href="https://t.me/marina_bor_mur" target="_blank" rel="noopener noreferrer" aria-label="Telegram Марины: @marina_bor_mur" title="Открыть Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 3.6 18.2 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L5.8 13.6 1 12.1c-1-.3-1-1 .2-1.5L20 3.4c.9-.3 1.6.2 1.4.2Z"/></svg></a>
+      </div>
+    </main>
+    <footer>
+      <span class="book-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 3h13a3 3 0 0 1 3 3v15H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Z"/><path d="M3 17h17M8 7h7M8 10h5"/></svg> С любовью к чтению</span>
+      <a href="https://t.me/marina_bor_mur" target="_blank" rel="noopener noreferrer">@marina_bor_mur ↗</a>
+    </footer>
+  </article>
+</body>
+</html>
