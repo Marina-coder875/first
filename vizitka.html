@@ -1,68 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#052d26">
-  <meta name="description" content="Муракаева Марина — автор приложения для любителей чтения. Свяжитесь со мной в Telegram.">
-  <title>Муракаева Марина · Персональная визитка</title>
-  <style>
-    :root { color-scheme: dark; --mint: #a6f8d4; --ink: #e7fff3; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100svh; background: #041c19; color: var(--ink); font-family: Georgia, 'Times New Roman', serif; display: grid; place-items: center; padding: 32px 20px; overflow-x: hidden; }
-    body::before { content: ''; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 20% 10%, #12624b66, transparent 55%), radial-gradient(ellipse at 90% 85%, #087c5433, transparent 50%); }
-    .card { position: relative; width: min(100%, 1000px); padding: clamp(28px, 6vw, 76px); border: 1px solid #a6f8d430; border-radius: 28px; background: linear-gradient(135deg, #0c3a31e8, #05261fe8); box-shadow: 0 32px 100px #0005; overflow: hidden; }
-    .card::after { content: ''; position: absolute; width: 360px; height: 360px; right: -210px; top: 80px; border: 1px solid #a6f8d422; border-radius: 50%; box-shadow: 0 0 0 40px #a6f8d409, 0 0 0 80px #a6f8d406; pointer-events: none; }
-    header, footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .label { font: 11px/1.6 Arial, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: #b5d9c9; }
-    .mark { width: 44px; height: 44px; padding: 10px; border: 1px solid #a6f8d440; border-radius: 50%; color: var(--mint); }
-    main { position: relative; z-index: 1; padding: clamp(54px, 9vw, 100px) 0 64px; }
-    .eyebrow { display: flex; align-items: center; gap: 10px; font: 13px Arial, sans-serif; color: var(--mint); }
-    .dot { width: 6px; height: 6px; background: #82edbc; border-radius: 50%; box-shadow: 0 0 14px #82edbc; }
-    h1 { margin: 25px 0; font-size: clamp(40px, 7.8vw, 88px); line-height: 1.08; font-weight: 400; letter-spacing: -.045em; }
-    h1 span { display: block; width: fit-content; max-width: 100%; background: linear-gradient(105deg, #f0fff6 10%, #a6f8d4 45%, #46bd91 70%, #e1ffed); background-size: 200% auto; background-clip: text; -webkit-background-clip: text; color: transparent; filter: drop-shadow(0 0 18px #67e6b333); animation: glow 8s ease-in-out infinite alternate; }
-    .description { max-width: 430px; margin: 0; color: #b6cec2; font: 17px/1.7 Arial, sans-serif; }
-    .actions { margin-top: 36px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-    a { -webkit-tap-highlight-color: transparent; }
-    .button { display: inline-flex; align-items: center; gap: 24px; min-height: 56px; padding: 16px 24px; border-radius: 100px; background: var(--mint); color: #073c2b; text-decoration: none; font: 600 14px Arial, sans-serif; position: relative; overflow: hidden; transition: transform .25s, box-shadow .25s; }
-    .button::before { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 25%, #fff8 50%, transparent 75%); transform: translateX(-150%); animation: shimmer 6s ease-in-out infinite; }
-    .button:hover { transform: translateY(-3px); box-shadow: 0 10px 32px #6de5b42b; }
-    .button svg { width: 20px; height: 20px; transition: transform .25s; }
-    .button:hover svg { transform: translate(3px, -3px); }
-    .social { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border: 1px solid #a6f8d44a; border-radius: 50%; color: var(--mint); transition: background .25s, transform .25s, box-shadow .25s; }
-    .social svg { width: 24px; height: 24px; }
-    .social:hover { background: #a6f8d419; transform: rotate(-8deg) translateY(-3px); box-shadow: 0 0 24px #6de5b420; }
-    a:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
-    footer { position: relative; z-index: 1; border-top: 1px solid #a6f8d424; padding-top: 24px; color: #a8c8b9; font: 12px/1.6 Arial, sans-serif; }
-    footer a { color: inherit; text-decoration: none; overflow-wrap: anywhere; }
-    footer a:hover { color: var(--mint); text-decoration: underline; }
-    .book-note { display: flex; align-items: center; gap: 9px; }
-    .book-note svg { width: 18px; height: 18px; flex-shrink: 0; }
-    @keyframes glow { to { background-position: 100% center; filter: drop-shadow(0 0 24px #67e6b355); } }
-    @keyframes shimmer { 0%, 65% { transform: translateX(-150%); } 90%, 100% { transform: translateX(150%); } }
-    @media (max-width: 520px) { body { padding: 16px 12px; } .card { border-radius: 22px; } header .label { font-size: 9px; letter-spacing: .16em; } main { padding-bottom: 48px; } footer { align-items: flex-start; flex-direction: column; gap: 12px; } .description { font-size: 15px; } }
-    @media (prefers-reduced-motion: reduce) { *, *::before { animation: none !important; transition: none !important; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e7f6ef">
+<title>Муракаева Марина — библиотекарь</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100svh;
+    padding: 24px 16px;
+    display: grid;
+    place-items: center;
+    color: #164c3b;
+    background:
+      radial-gradient(ellipse at 15% 15%, #b9ead3, transparent 55%),
+      radial-gradient(ellipse at 90% 90%, #cef0df, transparent 50%),
+      #f1faf5;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: min(100%, 900px);
+    padding: clamp(28px, 7vw, 72px);
+    border: 1px solid #ffffff;
+    border-radius: 32px;
+    background: linear-gradient(135deg, #ffffffeb, #e0f5eccc);
+    box-shadow: 0 24px 80px #226c431a;
+    animation: appear .8s ease both;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    right: -180px;
+    width: 340px;
+    height: 340px;
+    border: 1px solid #32966f20;
+    border-radius: 50%;
+    box-shadow: 0 0 0 36px #32966f08,
+                0 0 0 72px #32966f05;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .label {
+    font: 11px/1.6 Arial, sans-serif;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #537e6a;
+  }
+
+  .book {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    padding: 11px;
+    border: 1px solid #39856535;
+    border-radius: 50%;
+    color: #328562;
+  }
+
+  main { padding: 64px 0 56px; }
+
+  .hello {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 13px Arial, sans-serif;
+    color: #3c8062;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #3baf7d;
+    box-shadow: 0 0 12px #3baf7d65;
+  }
+
+  h1 {
+    margin: 24px 0;
+    font-size: clamp(36px, 8vw, 82px);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -.045em;
+  }
+
+  h1 span {
+    display: block;
+    width: fit-content;
+    background: linear-gradient(
+      110deg, #16573e, #389e72, #167851, #16573e
+    );
+    background-size: 220% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 12px #64c99845);
+    animation: glow 7s ease-in-out infinite alternate;
+  }
+
+  .profession {
+    margin: 0;
+    font: 18px/1.6 Arial, sans-serif;
+    color: #527563;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  .button {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-height: 56px;
+    padding: 17px 25px;
+    border-radius: 50px;
+    background: #217a56;
+    color: white;
+    font: 600 14px Arial, sans-serif;
+    text-decoration: none;
+    box-shadow: 0 8px 22px #217a5625;
+    transition: transform .25s, box-shadow .25s, background .25s;
+  }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      110deg, transparent 25%, #ffffff50, transparent 75%
+    );
+    transform: translateX(-150%);
+    animation: shine 5s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .button:hover {
+    background: #196344;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px #217a5638;
+  }
+
+  .button svg {
+    width: 20px;
+    height: 20px;
+    transition: transform .25s;
+  }
+
+  .button:hover svg { transform: translate(3px, -3px); }
+
+  .social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #36876550;
+    border-radius: 50%;
+    color: #217a56;
+    background: #ffffff75;
+    transition: transform .25s, background .25s, box-shadow .25s;
+  }
+
+  .social svg { width: 24px; height: 24px; }
+
+  .social:hover {
+    background: #c9eddb;
+    transform: translateY(-3px) rotate(-8deg);
+    box-shadow: 0 8px 20px #217a5620;
+  }
+
+  a:focus-visible {
+    outline: 3px solid #175c40;
+    outline-offset: 5px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 24px;
+    border-top: 1px solid #397f6025;
+    color: #557663;
+    font: 12px/1.6 Arial, sans-serif;
+  }
+
+  footer a {
+    color: #286d4f;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+
+  footer a:hover { text-decoration: underline; }
+
+  @keyframes glow {
+    to {
+      background-position: 100% center;
+      filter: drop-shadow(0 0 18px #64c99870);
+    }
+  }
+
+  @keyframes shine {
+    0%, 65% { transform: translateX(-150%); }
+    95%, 100% { transform: translateX(150%); }
+  }
+
+  @keyframes appear {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 480px) {
+    .card { border-radius: 24px; }
+    main { padding: 48px 0 40px; }
+    .label { font-size: 10px; letter-spacing: .12em; }
+    footer { flex-direction: column; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
 </head>
 <body>
-  <article class="card" aria-label="Персональная визитка">
-    <header>
-      <span class="label">Личная история · Новая глава</span>
-      <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 5c4-1 6 0 9 2 3-2 5-3 9-2v14c-4-1-6 0-9 2-3-2-5-3-9-2V5Z"/><path d="M12 7v14"/></svg>
-    </header>
-    <main>
-      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Рада знакомству</div>
-      <h1><span>Муракаева</span><span>Марина</span></h1>
-      <p class="description">Автор приложения<br>для любителей чтения</p>
-      <div class="actions">
-        <a class="button" href="https://t.me/marina_bor_mur" target="_blank" rel="noopener noreferrer">Написать мне<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
-        <a class="social" href="https://t.me/marina_bor_mur" target="_blank" rel="noopener noreferrer" aria-label="Telegram Марины: @marina_bor_mur" title="Открыть Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 3.6 18.2 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L5.8 13.6 1 12.1c-1-.3-1-1 .2-1.5L20 3.4c.9-.3 1.6.2 1.4.2Z"/></svg></a>
-      </div>
-    </main>
-    <footer>
-      <span class="book-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 3h13a3 3 0 0 1 3 3v15H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Z"/><path d="M3 17h17M8 7h7M8 10h5"/></svg> С любовью к чтению</span>
-      <a href="https://t.me/marina_bor_mur" target="_blank" rel="noopener noreferrer">@marina_bor_mur ↗</a>
-    </footer>
-  </article>
+<article class="card" aria-label="Персональная визитка Марины">
+  <header>
+    <span class="label">Между строк — целый мир</span>
+    <svg class="book" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M3 5c4-1 6 0 9 2 3-2 5-3 9-2v14c-4-1-6 0-9 2-3-2-5-3-9-2V5Z"/>
+      <path d="M12 7v14"/>
+    </svg>
+  </header>
+
+  <main>
+    <div class="hello">
+      <span class="dot" aria-hidden="true"></span>
+      Рада знакомству
+    </div>
+
+    <h1><span>Муракаева</span><span>Марина</span></h1>
+    <p class="profession">Библиотекарь</p>
+
+    <div class="actions">
+      <a class="button" href="https://t.me/marina_bor_mur"
+         target="_blank" rel="noopener noreferrer">
+        Написать мне
+        <svg viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M5 19 19 5M5 5h14v14"/>
+        </svg>
+      </a>
+
+      <a class="social" href="https://t.me/marina_bor_mur"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Написать Марине в Telegram"
+         title="Telegram: @marina_bor_mur">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M21.4 3.6 18.2 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L5.8 13.6 1 12.1c-1-.3-1-1 .2-1.5L20 3.4c.9-.3 1.6.2 1.4.2Z"/>
+        </svg>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <span>С любовью к книгам и людям</span>
+    <a href="https://t.me/marina_bor_mur"
+       target="_blank" rel="noopener noreferrer">
+      @marina_bor_mur
+    </a>
+  </footer>
+</article>
 </body>
 </html>
