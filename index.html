@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Авторские блокноты «Книга о книгах» и «Книга о фильмах» — ваша личная библиотека и фильмотека на бумаге."
+    />
+    <meta name="theme-color" content="#f5f1e8" />
+    <title>Страна Досуга — книги, фильмы и ваши истории</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Страна Досуга — на главную">
+        <span class="brand-mark" aria-hidden="true">СД</span>
+        <span class="brand-name">Страна<br />Досуга</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Открыть меню</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#products">Блокноты</a>
+        <a href="#inside">Что внутри</a>
+        <a href="#author">Автор</a>
+        <a href="#questions">Доставка и вопросы</a>
+        <a class="nav-cta" href="#order">Выбрать блокнот <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Авторские блокноты · Москва</p>
+          <h1>Соберите свою библиотеку. И&nbsp;свою фильмотеку.</h1>
+          <p class="hero-intro">
+            Книги, фильмы и впечатления, к которым хочется вернуться, — в двух бумажных
+            блокнотах для вашей личной коллекции.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#products">Выбрать блокнот <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#inside">Заглянуть внутрь <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-price">Каждый блокнот — 1&nbsp;450&nbsp;₽</p>
+        </div>
+        <div class="hero-art" aria-label="Иллюстрация двух авторских блокнотов">
+          <div class="hero-note note-top">ваши истории<br />остаются с вами</div>
+          <div class="hero-book book-film" aria-hidden="true">
+            <span class="book-kicker">СТРАНА ДОСУГА</span>
+            <span class="book-title">Книга<br />о фильмах</span>
+            <span class="book-rule"></span>
+            <span class="book-subtitle">моя личная фильмотека</span>
+            <span class="book-symbol">✳</span>
+          </div>
+          <div class="hero-book book-reading" aria-hidden="true">
+            <span class="book-kicker">СТРАНА ДОСУГА</span>
+            <span class="book-title">Книга<br />о книгах</span>
+            <span class="book-rule"></span>
+            <span class="book-subtitle">моя домашняя библиотека</span>
+            <span class="book-symbol">✳</span>
+          </div>
+          <span class="hero-stamp" aria-hidden="true">Личный<br />архив</span>
+          <span class="hero-caption">Две истории. Одна ваша коллекция.</span>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Идея проекта">
+        <div class="section-wrap intro-strip-inner">
+          <span class="small-index">01 / ИДЕЯ</span>
+          <p>Не бесконечный список в телефоне, а <em>ваша собственная история</em> — на бумаге.</p>
+          <span class="intro-flower" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="products section-wrap section-pad" id="products">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Два блокнота — два увлечения</p>
+            <h2>Что будет на вашей полке?</h2>
+          </div>
+          <p class="section-aside">Выберите один или соберите пару для себя и близкого человека.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card product-card-reading">
+            <div class="product-visual">
+              <div class="mini-book mini-book-reading" aria-hidden="true">
+                <span class="mini-kicker">СТРАНА ДОСУГА</span>
+                <span class="mini-title">Книга<br />о книгах</span>
+                <span class="mini-flower">✳</span>
+              </div>
+              <span class="visual-caption">Для тех, кто живёт среди книг</span>
+              <span class="visual-number">01</span>
+            </div>
+            <div class="product-info">
+              <div class="product-title-row">
+                <div>
+                  <p class="eyebrow">Личная библиотека</p>
+                  <h3>Книга о книгах</h3>
+                </div>
+                <p class="product-price">1&nbsp;450&nbsp;₽</p>
+              </div>
+              <p class="product-description">
+                Записывайте прочитанное, книги на полках и те, что ещё хочется добавить
+                в домашнюю библиотеку.
+              </p>
+              <ul class="feature-list">
+                <li>Автор, название и буква фамилии автора</li>
+                <li>Даты, заметки и ваша оценка</li>
+                <li>Список книг для будущего чтения</li>
+              </ul>
+              <button class="button button-outline order-trigger" type="button" data-product="Книга о книгах">
+                Заказать «Книгу о книгах» <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card product-card-film">
+            <div class="product-visual">
+              <div class="mini-book mini-book-film" aria-hidden="true">
+                <span class="mini-kicker">СТРАНА ДОСУГА</span>
+                <span class="mini-title">Книга<br />о фильмах</span>
+                <span class="mini-flower">✳</span>
+              </div>
+              <span class="visual-caption">Для тех, кто любит хорошее кино</span>
+              <span class="visual-number">02</span>
+            </div>
+            <div class="product-info">
+              <div class="product-title-row">
+                <div>
+                  <p class="eyebrow">Личная фильмотека</p>
+                  <h3>Книга о фильмах</h3>
+                </div>
+                <p class="product-price">1&nbsp;450&nbsp;₽</p>
+              </div>
+              <p class="product-description">
+                Сохраняйте фильмы, сериалы и мультфильмы, которые уже посмотрели
+                или хотите посмотреть.
+              </p>
+              <ul class="feature-list">
+                <li>Записи по жанрам и дате просмотра</li>
+                <li>Год, режиссёр, актёры и впечатления</li>
+                <li>Заметка о том, понравился ли фильм</li>
+              </ul>
+              <button class="button button-outline order-trigger" type="button" data-product="Книга о фильмах">
+                Заказать «Книгу о фильмах» <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="inside section-pad" id="inside">
+        <div class="section-wrap">
+          <div class="section-heading inside-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> Страницы, которые работают на вас</p>
+              <h2>Место для каждой истории</h2>
+            </div>
+            <p class="section-aside">Заполняйте так, как удобно именно вам: кратко, подробно или возвращаясь к записям спустя время.</p>
+          </div>
+          <div class="spread-grid">
+            <article class="spread-card spread-card-book">
+              <div class="spread spread-book" aria-label="Иллюстрация страницы книжного блокнота">
+                <div class="spread-page">
+                  <span class="page-overline">МОЯ БИБЛИОТЕКА</span>
+                  <span class="page-letter">А</span>
+                  <span class="page-lines"></span><span class="page-lines short"></span>
+                  <span class="page-lines"></span><span class="page-lines medium"></span>
+                </div>
+                <div class="spread-page">
+                  <span class="page-overline">ЗАМЕТКИ</span>
+                  <span class="page-label">Автор и название</span>
+                  <span class="page-lines"></span><span class="page-lines"></span>
+                  <span class="page-label page-label-spaced">Примечание</span>
+                  <span class="page-lines"></span><span class="page-lines short"></span>
+                  <span class="page-tick">✓</span>
+                </div>
+              </div>
+              <div class="spread-caption">
+                <span class="small-index">01 — КНИГА О КНИГАХ</span>
+                <p>Находите запись по букве фамилии автора, отмечайте прочитанное и оставляйте заметки.</p>
+              </div>
+            </article>
+            <article class="spread-card spread-card-film">
+              <div class="spread spread-film" aria-label="Иллюстрация страницы киноблокнота">
+                <div class="spread-page">
+                  <span class="page-overline">МОЯ ФИЛЬМОТЕКА</span>
+                  <span class="ticket-stub">КИНО<br /><b>№ 024</b></span>
+                  <span class="page-label">Название · год</span>
+                  <span class="page-lines"></span><span class="page-lines short"></span>
+                  <span class="page-label page-label-spaced">Жанр · дата</span>
+                  <span class="page-lines"></span>
+                </div>
+                <div class="spread-page">
+                  <span class="page-overline">ПОСЛЕ СЕАНСА</span>
+                  <span class="page-label">Режиссёр · актёры</span>
+                  <span class="page-lines"></span><span class="page-lines"></span>
+                  <span class="page-label page-label-spaced">Моё впечатление</span>
+                  <span class="page-lines"></span><span class="page-lines short"></span>
+                  <span class="page-rating">✳ &nbsp; ✳ &nbsp; ✳</span>
+                </div>
+              </div>
+              <div class="spread-caption">
+                <span class="small-index">02 — КНИГА О ФИЛЬМАХ</span>
+                <p>Собирайте записи по жанрам: год, режиссёр, актёры, дата просмотра и личная отметка.</p>
+              </div>
+            </article>
+          </div>
+          <p class="visual-disclaimer">Иллюстрации показывают идеи записей, а не фотографии реальных страниц.</p>
+        </div>
+      </section>
+
+      <section class="flexibility section-wrap section-pad">
+        <div class="flexibility-mark" aria-hidden="true">✳</div>
+        <div class="flexibility-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Без правильного и неправильного</p>
+          <h2>Записывайте<br />по-своему.</h2>
+          <p>Отметьте, понравилась ли книга или фильм. Запишите дату, пару слов или целую историю. Эти страницы — не план и не соревнование, а место для того, что важно именно вам.</p>
+          <a class="text-link" href="#order">Найти свой блокнот <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="flexibility-quote">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <p>Время от времени приятно открыть свою библиотеку и вспомнить не только название, но и себя в момент чтения.</p>
+          <span class="quote-caption">ИДЕЯ «СТРАНЫ ДОСУГА»</span>
+        </div>
+      </section>
+
+      <section class="gift section-pad" id="gift">
+        <div class="section-wrap gift-inner">
+          <div class="gift-icon" aria-hidden="true">✳</div>
+          <div class="gift-copy">
+            <p class="eyebrow">Для себя или в подарок</p>
+            <h2>Увлечения лучше делить.</h2>
+            <p>При заказе двух разных блокнотов — подарок. При заказе от трёх блокнотов — скидка 5% на весь заказ.</p>
+            <p class="gift-footnote">Напишите, и автор расскажет, какой подарок доступен сейчас.</p>
+          </div>
+          <button class="button button-light order-trigger" type="button" data-product="Комплект: оба блокнота">
+            Узнать про комплект <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="author section-wrap section-pad" id="author">
+        <div class="author-portrait" aria-hidden="true">
+          <div class="portrait-paper">
+            <span class="portrait-sun">✳</span>
+            <span class="portrait-script">с любовью<br />к историям</span>
+            <span class="portrait-caption">АВТОРСКИЙ ПРОЕКТ</span>
+          </div>
+          <span class="portrait-note">Москва · Россия</span>
+        </div>
+        <div class="author-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> За каждой страницей — человек</p>
+          <h2>Здравствуйте,<br />я Марина.</h2>
+          <p>Я создала «Книгу о книгах» и «Книгу о фильмах» для тех, кому мало просто поставить галочку в списке. В этих блокнотах можно собрать свою домашнюю библиотеку и личную фильмотеку — по записям, к которым захочется возвращаться.</p>
+          <p class="author-signature">Марина Муракаева</p>
+          <a class="text-link" href="mailto:bloknot_dosug_avtor@mail.ru">Написать автору <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="practical section-pad" id="questions">
+        <div class="section-wrap practical-grid">
+          <div class="delivery-card">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Перед заказом</p>
+            <h2>Доставка и детали</h2>
+            <div class="delivery-item">
+              <span class="delivery-icon" aria-hidden="true">01</span>
+              <div><h3>Москва</h3><p>Бесплатная доставка на следующий день после заказа.</p></div>
+            </div>
+            <div class="delivery-item">
+              <span class="delivery-icon" aria-hidden="true">02</span>
+              <div><h3>Другие регионы России</h3><p>Стоимость и срок доставки рассчитываются индивидуально.</p></div>
+            </div>
+            <div class="delivery-item">
+              <span class="delivery-icon" aria-hidden="true">03</span>
+              <div><h3>Оплата и наличие</h3><p>Подтвердим при ответе на заявку, до оформления заказа.</p></div>
+            </div>
+            <a class="text-link" href="#order">Задать вопрос автору <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="faq">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Коротко и по делу</p>
+            <h2>Частые вопросы</h2>
+            <details>
+              <summary>Можно купить блокнот в подарок?</summary>
+              <p>Да. При заказе двух разных блокнотов предусмотрен подарок. Напишите автору, чтобы уточнить, что входит в предложение сейчас.</p>
+            </details>
+            <details>
+              <summary>Как оформить заказ?</summary>
+              <p>Выберите блокнот и заполните короткую форму. Откроется письмо с данными заказа — проверьте его и нажмите «Отправить» в почтовом приложении.</p>
+            </details>
+            <details>
+              <summary>Сколько стоит доставка по России?</summary>
+              <p>Для регионов России стоимость и сроки рассчитываются индивидуально. Автор сообщит их до подтверждения заказа.</p>
+            </details>
+            <details>
+              <summary>Что внутри и какого размера блокноты?</summary>
+              <p>Содержание блокнотов показано выше. Размер, тип бумаги, переплёт и количество страниц можно уточнить у автора перед заказом.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="order section-wrap section-pad" id="order">
+        <div class="order-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Начните свою коллекцию</p>
+          <h2>Какой блокнот<br />заполнит вашу полку?</h2>
+          <p>Оставьте контакт — подготовим письмо с вашим заказом. Никаких обязательств: сначала уточним наличие и доставку.</p>
+          <a class="order-email" href="mailto:bloknot_dosug_avtor@mail.ru">bloknot_dosug_avtor@mail.ru <span aria-hidden="true">↗</span></a>
+        </div>
+        <form class="order-form" id="order-form">
+          <label for="product">Выберите блокнот</label>
+          <select id="product" name="product" required>
+            <option value="Книга о книгах">Книга о книгах — 1 450 ₽</option>
+            <option value="Книга о фильмах">Книга о фильмах — 1 450 ₽</option>
+            <option value="Комплект: оба блокнота">Комплект: оба блокнота — уточнить подарок</option>
+          </select>
+          <div class="form-row">
+            <div>
+              <label for="quantity">Количество</label>
+              <input id="quantity" name="quantity" type="number" min="1" max="99" value="1" required />
+            </div>
+            <div>
+              <label for="name">Как к вам обращаться</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required />
+            </div>
+          </div>
+          <label for="contact">Телефон или удобный способ связи</label>
+          <input id="contact" name="contact" type="text" autocomplete="tel" placeholder="+7 … или @username" required />
+          <label for="note">Комментарий <span class="label-optional">необязательно</span></label>
+          <textarea id="note" name="note" rows="3" placeholder="Например, нужны оба блокнота или это подарок"></textarea>
+          <label class="consent">
+            <input id="consent" name="consent" type="checkbox" required />
+            <span>Я согласен(на) отправить указанные данные автору по электронной почте для связи по заказу. <a href="privacy.html" target="_blank" rel="noopener">Как используются данные</a>.</span>
+          </label>
+          <button class="button button-dark form-submit" type="submit">Подготовить письмо <span aria-hidden="true">↗</span></button>
+          <p class="form-note" id="form-note" aria-live="polite">Письмо откроется в вашей почтовой программе. Заказ будет отправлен после нажатия «Отправить».</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-wrap footer-main">
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">СД</span>
+          <span class="brand-name">Страна<br />Досуга</span>
+        </a>
+        <p>Блокноты для тех,<br />кто любит истории.</p>
+        <div class="footer-contact">
+          <span>Автор · Марина Муракаева</span>
+          <a href="mailto:bloknot_dosug_avtor@mail.ru">bloknot_dosug_avtor@mail.ru</a>
+          <span>Москва, Россия</span>
+          <a href="privacy.html">Информация о данных</a>
+        </div>
+        <a class="back-top" href="#top">Наверх ↑</a>
+      </div>
+      <div class="section-wrap footer-bottom">
+        <span>© <span id="year">2026</span> Страна Досуга</span>
+        <span>Авторские блокноты для вашей личной библиотеки и фильмотеки</span>
+      </div>
+    </footer>
+  </body>
+</html>
